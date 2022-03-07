@@ -74,6 +74,7 @@ static int do_clone(int (*fn)(void *), string bin) {
     ret = -1;
   } else {
     ret = 0;
+    cout << format("child exit [pid={}]", pid) << endl;
   }
   return ret;
 }
